@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0146A914-D8B7-4F19-A34E-FCBB041EEE39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exult.Sample.Blog</RootNamespace>
+    <AssemblyName>Exult.Sample.Blog</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmbeddedResources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="terrafirma.original\default.css" />
+    <Content Include="terrafirma.original\images\a1.gif" />
+    <Content Include="terrafirma.original\images\a10.jpg" />
+    <Content Include="terrafirma.original\images\a16.gif" />
+    <Content Include="terrafirma.original\images\a18.gif" />
+    <Content Include="terrafirma.original\images\a22.gif" />
+    <Content Include="terrafirma.original\images\a26.gif" />
+    <Content Include="terrafirma.original\images\a33.gif" />
+    <Content Include="terrafirma.original\images\a36.gif" />
+    <Content Include="terrafirma.original\images\a38.gif" />
+    <Content Include="terrafirma.original\images\a41.gif" />
+    <Content Include="terrafirma.original\images\a47.gif" />
+    <Content Include="terrafirma.original\images\a50.gif" />
+    <Content Include="terrafirma.original\images\a8.gif" />
+    <Content Include="terrafirma.original\images\abg.gif" />
+    <Content Include="terrafirma.original\images\pic1.jpg" />
+    <Content Include="terrafirma.original\images\pic2.jpg" />
+    <Content Include="terrafirma.original\images\spacer.gif" />
+    <Content Include="terrafirma.original\images\upbg.gif" />
+    <Content Include="terrafirma.original\index.html" />
+    <Content Include="terrafirma.original\readme.txt" />
+    <Content Include="terrafirma\default.css" />
+    <Content Include="terrafirma\images\a1.gif" />
+    <Content Include="terrafirma\images\a10.jpg" />
+    <Content Include="terrafirma\images\a16.gif" />
+    <Content Include="terrafirma\images\a18.gif" />
+    <Content Include="terrafirma\images\a22.gif" />
+    <Content Include="terrafirma\images\a26.gif" />
+    <Content Include="terrafirma\images\a33.gif" />
+    <Content Include="terrafirma\images\a36.gif" />
+    <Content Include="terrafirma\images\a38.gif" />
+    <Content Include="terrafirma\images\a41.gif" />
+    <Content Include="terrafirma\images\a47.gif" />
+    <Content Include="terrafirma\images\a50.gif" />
+    <Content Include="terrafirma\images\a8.gif" />
+    <Content Include="terrafirma\images\abg.gif" />
+    <Content Include="terrafirma\images\pic1.jpg" />
+    <Content Include="terrafirma\images\pic2.jpg" />
+    <Content Include="terrafirma\images\spacer.gif" />
+    <Content Include="terrafirma\images\upbg.gif" />
+    <EmbeddedResource Include="terrafirma\index.html" />
+    <Content Include="terrafirma\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exult.proj">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

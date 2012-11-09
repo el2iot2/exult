@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C39CA145-495C-45C4-8BC5-8F6761989E84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exult</RootNamespace>
+    <AssemblyName>Exult</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argotic.Common">
+      <HintPath>..\packages\Argotic.Common.2008.0.2.0\lib\Net35\Argotic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Core">
+      <HintPath>..\packages\Argotic.Core.2008.0.2.0\lib\Net35\Argotic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Extensions">
+      <HintPath>..\packages\Argotic.Extensions.2008.0.2.0\lib\Net35\Argotic.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Web">
+      <HintPath>..\packages\Argotic.Web.2008.0.2.0\lib\Net35\Argotic.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK, Version=1.4.9.0, Culture=neutral, PublicKeyToken=cd2d24cd2bace800, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AWSSDK.1.4.9.0\lib\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.AccessControl">
+      <HintPath>..\packages\Google.GData.AccessControl.1.9.0.0\lib\Google.GData.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client">
+      <HintPath>..\packages\Google.GData.Client.1.9.0.0\lib\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Documents">
+      <HintPath>..\packages\Google.GData.Documents.1.9.0.0\lib\Google.GData.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions">
+      <HintPath>..\packages\Google.GData.Extensions.1.9.0.0\lib\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.3\lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\sitemap.cs" />
+    <Compile Include="Tasks\Aws\CalculateS3Puts.cs" />
+    <Compile Include="Tasks\Aws\S3Put.cs" />
+    <Compile Include="Tasks\Aws\ListS3ObjectTimestamps.cs" />
+    <Compile Include="Tasks\Aws\AwsCredentialsTask.cs" />
+    <Compile Include="Tasks\BaseTask.cs" />
+    <Compile Include="Tasks\RecursiveDirName.cs" />
+    <Compile Include="Tasks\Google\Documents\ResourceType.cs" />
+    <Compile Include="Tasks\Zip.cs" />
+    <Compile Include="Tasks\Aws\DefaultPublishReceipts.cs" />
+    <Compile Include="Tasks\Google\Documents\QueryFolders.cs" />
+    <Compile Include="Tasks\Google\Documents\GetChanges.cs" />
+    <Compile Include="Tasks\Google\Documents\PathMapping.cs" />
+    <Compile Include="Tasks\Google\Documents\TaskItemExtensions.cs" />
+    <Compile Include="Tasks\Json\SelectJson.cs" />
+    <Compile Include="Tasks\SyndicateAtomFeed.cs" />
+    <Compile Include="Tasks\SyndicateFeedTask.cs" />
+    <Compile Include="Tasks\ModelTransformQueryTask.cs" />
+    <Compile Include="Tasks\CreateModelItem.cs" />
+    <Compile Include="Tasks\ModelQueryTask.cs" />
+    <Compile Include="Tasks\RelateModels.cs" />
+    <Compile Include="Tasks\Sitemap.cs" />
+    <Compile Include="Tasks\Google\Documents\GetFolderContent.cs" />
+    <Compile Include="Tasks\TaskItemExtensions.cs" />
+    <Compile Include="Tasks\Google\Documents\DocumentsTask.cs" />
+    <Compile Include="Tasks\Google\Documents\GetFolders.cs" />
+    <Compile Include="Tasks\Html\RemoveStyles.cs" />
+    <Compile Include="Tasks\JoinModels.cs" />
+    <Compile Include="Tasks\Google\Documents\Download.cs" />
+    <Compile Include="Tasks\Google\Documents\Text\ModelHtml.cs" />
+    <Compile Include="Tasks\TaskItemTransform.cs" />
+    <Compile Include="XslTranforms.cs" />
+    <Compile Include="Schema\Items.cs">
+      <DependentUpon>Items.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tasks\Bind.cs" />
+    <Compile Include="Schema\Items.Designer.cs">
+      <DependentUpon>Items.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="XmlSchemata.cs" />
+    <Compile Include="Tasks\WriteItems.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Schema\Model.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Schema\Items.xsc">
+      <DependentUpon>Items.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Schema\Items.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Items.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Schema\Items.xss">
+      <DependentUpon>Items.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Schema\Standard\xhtml1-frameset.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schema\Standard\xhtml1-strict.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schema\Standard\xhtml1-transitional.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schema\Standard\xml.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Schema\sitemap.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Transform\Google\Documents\Text\ToModel.xslt">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Transform\Bind.xslt">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Schema\xsd_settings_sitemap.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

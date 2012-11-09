@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="model"
+    targetNamespace="http://code.google.com/p/exult/model.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://code.google.com/p/exult/model.xsd"
+    xmlns:mstns="http://code.google.com/p/exult/model.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="model">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0"/>
+      </xs:sequence>
+      <xs:anyAttribute/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

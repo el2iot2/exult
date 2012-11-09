@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Items" targetNamespace="http://code.google.com/p/exult/Items.xsd" xmlns:mstns="http://code.google.com/p/exult/Items.xsd" xmlns="http://code.google.com/p/exult/Items.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Items" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Items" msprop:Generator_UserDSName="Items">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Item" msprop:Generator_TableClassName="ItemDataTable" msprop:Generator_TableVarName="tableItem" msprop:Generator_TablePropName="Item" msprop:Generator_RowDeletingName="ItemRowDeleting" msprop:Generator_UserTableName="Item" msprop:Generator_RowChangingName="ItemRowChanging" msprop:Generator_RowEvHandlerName="ItemRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemRowDeleted" msprop:Generator_RowEvArgName="ItemRowChangeEvent" msprop:Generator_RowChangedName="ItemRowChanged" msprop:Generator_RowClassName="ItemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FullPath" msprop:Generator_ColumnVarNameInTable="columnFullPath" msprop:Generator_ColumnPropNameInRow="FullPath" msprop:Generator_ColumnPropNameInTable="FullPathColumn" msprop:Generator_UserColumnName="FullPath" type="xs:string" minOccurs="0" />
+              <xs:element name="RootDir" msprop:Generator_ColumnVarNameInTable="columnRootDir" msprop:Generator_ColumnPropNameInRow="RootDir" msprop:Generator_ColumnPropNameInTable="RootDirColumn" msprop:Generator_UserColumnName="RootDir" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" type="xs:string" minOccurs="0" />
+              <xs:element name="Extension" msprop:Generator_ColumnVarNameInTable="columnExtension" msprop:Generator_ColumnPropNameInRow="Extension" msprop:Generator_ColumnPropNameInTable="ExtensionColumn" msprop:Generator_UserColumnName="Extension" type="xs:string" minOccurs="0" />
+              <xs:element name="RelativeDir" msprop:Generator_ColumnVarNameInTable="columnRelativeDir" msprop:Generator_ColumnPropNameInRow="RelativeDir" msprop:Generator_ColumnPropNameInTable="RelativeDirColumn" msprop:Generator_UserColumnName="RelativeDir" type="xs:string" minOccurs="0" />
+              <xs:element name="Directory" msprop:Generator_ColumnVarNameInTable="columnDirectory" msprop:Generator_ColumnPropNameInRow="Directory" msprop:Generator_ColumnPropNameInTable="DirectoryColumn" msprop:Generator_UserColumnName="Directory" type="xs:string" minOccurs="0" />
+              <xs:element name="RecursiveDir" msprop:Generator_ColumnVarNameInTable="columnRecursiveDir" msprop:Generator_ColumnPropNameInRow="RecursiveDir" msprop:Generator_ColumnPropNameInTable="RecursiveDirColumn" msprop:Generator_UserColumnName="RecursiveDir" type="xs:string" minOccurs="0" />
+              <xs:element name="Identity" msprop:Generator_ColumnVarNameInTable="columnIdentity" msprop:Generator_ColumnPropNameInRow="Identity" msprop:Generator_ColumnPropNameInTable="IdentityColumn" msprop:Generator_UserColumnName="Identity" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedTime" msprop:Generator_ColumnVarNameInTable="columnModifiedTime" msprop:Generator_ColumnPropNameInRow="ModifiedTime" msprop:Generator_ColumnPropNameInTable="ModifiedTimeColumn" msprop:Generator_UserColumnName="ModifiedTime" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedTime" msprop:Generator_ColumnVarNameInTable="columnCreatedTime" msprop:Generator_ColumnPropNameInRow="CreatedTime" msprop:Generator_ColumnPropNameInTable="CreatedTimeColumn" msprop:Generator_UserColumnName="CreatedTime" type="xs:string" minOccurs="0" />
+              <xs:element name="AccessedTime" msprop:Generator_ColumnVarNameInTable="columnAccessedTime" msprop:Generator_ColumnPropNameInRow="AccessedTime" msprop:Generator_ColumnPropNameInTable="AccessedTimeColumn" msprop:Generator_UserColumnName="AccessedTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
